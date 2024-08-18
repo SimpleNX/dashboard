@@ -1,0 +1,61 @@
+body{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+div{
+    margin : 0;
+    padding : 0;
+}
+
+#container{
+    display: grid;
+    height : 100vh;
+    width : 100vw;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#sidebar{
+    background-color: rgb(122, 153, 239);
+    grid-row: 1 / -1;
+    grid-column: 1/ 2;
+
+    display : grid;
+    padding : 15px;
+    gap : 10px;
+}
+
+#header{
+    background-color: white;
+    box-shadow : 10px 10px rgb(0 0 0 /40%);
+    grid-column: 2/-1;
+    grid-row: 1/2;
+}
+
+#main{
+    background-color: lightgray;
+    grid-row : 2/-1;
+    grid-column: 2/-1;
+}
+
+#logo>p{
+    color : white;
+    font-size: 30px;
+}
+
+.links{
+    color : white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.links>img{
+    margin : 0;
+    padding : 0;
+    height : 1.3em;
+    width : 1.3em;
+    filter: invert(100%) sepia(1%) saturate(7496%) hue-rotate(107deg) brightness(106%) contrast(101%);
+}

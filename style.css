@@ -23,7 +23,7 @@ input{
 }
 
 #sidebar{
-    background-color: rgb(91, 129, 232);
+    background-color: rgb(107, 107, 240);
     grid-row: 1 / -1;
     grid-column: 1/ 2;
 
@@ -88,7 +88,7 @@ input{
 }
 
 #top input[type="search"]{
-    width : 100%;
+    width : clamp(25%, 100%, 500px);
     height : 50%;
     border-radius: 15px;
     background-color: rgb(203, 226, 233);
@@ -103,7 +103,45 @@ input{
     grid-column: 4;
 }
 
-/* #top #proid{
-    border-radius: 100%;
-    background-color: yellow;
-} */
+#top img[alt="profile"], #top img[alt="notifications"], 
+#top img[alt="search"], #top p{
+    margin-top: 4px;
+}
+#top p{
+    font-weight: bold;
+}
+
+#bot{
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 3fr 2fr 2fr 2fr;
+    padding : 20px 10px 0 15px;
+}
+
+#bot .new{
+    grid-column: 4;
+}
+
+.bot-btn{
+    background-color: rgb(107, 107, 240);
+    color : white;
+    width : 70%;
+    border-radius: 20px;
+    height : 60%;
+    text-align: center;
+    font-size: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : 0 15%;
+    cursor: pointer;
+}
+
+#details > p{
+    font-size: 70%;
+    font-weight: bold;
+}
+
+#details > p + p{
+    font-size: 130%;   
+    font-weight: bold;
+}
